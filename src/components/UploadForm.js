@@ -11,11 +11,21 @@ function UploadForm({ onUpload, onTextChange }) {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleFileUpload} />
+    <div className="p-4 bg-gray-100 rounded-md shadow-md space-y-4">
+      <input
+        type="file"
+        onChange={handleFileUpload}
+        className="block w-full text-sm text-gray-500
+                   file:mr-4 file:py-2 file:px-4
+                   file:rounded-full file:border-0
+                   file:text-sm file:font-semibold
+                   file:bg-blue-50 file:text-blue-700
+                   hover:file:bg-blue-100"
+      />
       <textarea
         onChange={(e) => onTextChange(e.target.value)}
         placeholder="Ketik pesan di sini..."
+        className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
     </div>
   );
