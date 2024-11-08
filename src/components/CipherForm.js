@@ -111,13 +111,13 @@ function CipherForm({
       <div className="flex space-x-2">
         <button
           onClick={() => onAction("encrypt")}
-          className="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 bg-purple-950 text-white rounded-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Enkripsi
         </button>
         <button
           onClick={() => onAction("decrypt")}
-          className="w-full p-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="w-full p-2 bg-green-950 text-white rounded-md hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500"
         >
           Dekripsi
         </button>

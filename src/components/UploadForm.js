@@ -19,8 +19,8 @@ function UploadForm({ onUpload, onTextChange }) {
                    file:mr-4 file:py-2 file:px-4
                    file:rounded-full file:border-0
                    file:text-sm file:font-semibold
-                   file:bg-blue-50 file:text-blue-700
-                   hover:file:bg-blue-100"
+                   file:bg-gray-800 file:text-white
+                   hover:file:bg-gray-500"
       />
       <textarea
         onChange={(e) => onTextChange(e.target.value)}
