@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/encdec-cipher/static/css/main.e6c13ad2.css",
+    "main.js": "/encdec-cipher/static/js/main.8eb83fdc.js",
+    "static/js/453.b941e7cc.chunk.js": "/encdec-cipher/static/js/453.b941e7cc.chunk.js",
+    "index.html": "/encdec-cipher/index.html",
+    "main.e6c13ad2.css.map": "/encdec-cipher/static/css/main.e6c13ad2.css.map",
+    "main.8eb83fdc.js.map": "/encdec-cipher/static/js/main.8eb83fdc.js.map",
+    "453.b941e7cc.chunk.js.map": "/encdec-cipher/static/js/453.b941e7cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.8eb83fdc.js"
+  ]
+}
