@@ -29,11 +29,11 @@ function CipherForm({
       >
         <option value="vigenere">Vigenere Cipher Standard</option>
         <option value="autokey">Vigenere Cipher Autokey</option>
-        <option value="extended">Extended Vigenere Cipher</option>
+        <option value="extended">Extended Vigenere Cipher (Base64)</option>
         <option value="playfair">Playfair Cipher</option>
         <option value="affine">Affine Cipher</option>
         <option value="hill">Hill Cipher</option>
-        <option value="super">Super Enkripsi</option>
+        <option value="super">Super Enkripsi (Base64)</option>
       </select>
 
       {isSuper && (
