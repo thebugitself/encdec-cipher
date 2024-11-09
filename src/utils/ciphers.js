@@ -88,6 +88,8 @@ export function autokeyVigenereDecrypt(cipherText, key) {
   return result;
 }
 
+// Extended Vigenere Cipher
+
 export function extendedVigenereEncrypt(plainText, key) {
   let result = "";
   for (let i = 0; i < plainText.length; i++) {
@@ -96,13 +98,19 @@ export function extendedVigenereEncrypt(plainText, key) {
     const encryptedChar = String.fromCharCode((plainChar + keyChar) % 256);
     result += encryptedChar;
   }
-  return result;
+  const base64Encoded = encodeBase64(result);
+  return base64Encoded;
 }
 
 export function extendedVigenereDecrypt(cipherText, key) {
+  const decodedText = decodeBase64(cipherText);
+  if (!decodedText) {
+    return "Error: Failed to decode Base64.";
+  }
+
   let result = "";
-  for (let i = 0; i < cipherText.length; i++) {
-    const cipherChar = cipherText.charCodeAt(i);
+  for (let i = 0; i < decodedText.length; i++) {
+    const cipherChar = decodedText.charCodeAt(i);
     const keyChar = key.charCodeAt(i % key.length);
     const decryptedChar = String.fromCharCode(
       (cipherChar - keyChar + 256) % 256
